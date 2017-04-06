@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DACircularProgress", "source\DACircularProgress\DACircularProgress.csproj", "{E6CE97B8-FA59-47F5-99D6-99BF1DF1FCE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masonry", "..\Masonry\source\Masonry\Masonry.csproj", "{E6CE97B8-FA59-47F5-99D6-99BF1DF1FCE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DACircularProgressSample", "samples\DACircularProgressSample\DACircularProgressSample.csproj", "{424FB004-7068-44D5-880E-CB76B7B8A653}"
 EndProject

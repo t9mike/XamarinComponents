@@ -8,3 +8,4 @@ externals
 *.userprefs
 
 .DS_Store
+iOS/DACircularProgress/Components

@@ -24,7 +24,6 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchI18n>
     </MtouchI18n>
   </PropertyGroup>
@@ -39,7 +38,6 @@
     <MtouchLink>Full</MtouchLink>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchI18n>
     </MtouchI18n>
   </PropertyGroup>
@@ -57,7 +55,6 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchProfiling>true</MtouchProfiling>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <IpaPackageName>
     </IpaPackageName>
     <MtouchI18n>
@@ -73,7 +70,6 @@
     <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchI18n>
     </MtouchI18n>
     <IpaPackageName>
@@ -86,7 +82,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="Masonry">
-      <HintPath>..\packages\Masonry.0.6.3.0\lib\Xamarin.iOS\Masonry.dll</HintPath>
+      <HintPath>..\..\packages\Masonry.0.6.4.0\lib\Xamarin.iOS\Masonry.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -111,5 +107,11 @@
       <Project>{E6CE97B8-FA59-47F5-99D6-99BF1DF1FCE1}</Project>
       <Name>DACircularProgress</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="Masonry">
+      <Version>0.6.4.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
   </ItemGroup>
 </Project>
