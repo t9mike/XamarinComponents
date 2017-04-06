@@ -37,6 +37,14 @@ namespace DACircularProgressSample
 			indeterminateProgressView.Indeterminate = true;
 			View.AddSubview (indeterminateProgressView);
 
+			var progressView2 = new CircularProgressView();
+			progressView2.TrackTintColor = UIColor.LightGray;
+			progressView2.RoundedCorners = true;
+			progressView2.SetProgress(0.75f, true);
+			progressView2.ThicknessRatio = 0.35f;
+			View.AddSubview(progressView2);
+
+
 			// constraints
 			progressView.MakeConstraints (make => {
 				make.CenterX.EqualTo (View.CenterX ());
@@ -61,6 +69,13 @@ namespace DACircularProgressSample
 				make.Top.EqualTo (pieProgressView.Bottom ()).Offset (12.0f);
 				make.Width.EqualTo (NSNumber.FromNFloat (60));
 				make.Height.EqualTo (NSNumber.FromNFloat (60));
+			});
+			progressView2.MakeConstraints(make =>
+			{
+				make.CenterX.EqualTo(View.CenterX());
+				make.Top.EqualTo(indeterminateProgressView.Bottom()).Offset(12.0f);
+				make.Width.EqualTo(NSNumber.FromNFloat(60));
+				make.Height.EqualTo(NSNumber.FromNFloat(60));
 			});
 
 			var progress = -0.1f;
