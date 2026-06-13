@@ -18,7 +18,7 @@
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="../../externals/libDACircularProgress.a">
+    <NativeReference Include="../../DACircularProgress.xcframework">
       <Kind>Static</Kind>
       <ForceLoad>True</ForceLoad>
       <Frameworks>QuartzCore</Frameworks>
